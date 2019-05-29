@@ -20,7 +20,7 @@ for iter = 1:num_iters
 
   delta = ((theta' * X' - y')*X)';
   theta = theta - alpha / m * delta;
-
+  fprintf(computeCostMulti(X,y, theta));
 
 
 

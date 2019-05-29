@@ -56,10 +56,6 @@ fprintf('Normalizing Features ...\n');
 X = [ones(m, 1) X];
 
 
-X = [ones(m, 1), data(:,1)]; % Add a column of ones to x
-theta = zeros(2, 1); % initialize fitting parameters
-fprintf(' x = [%.0f %.0f], y = %.0f \n', [X(1:10,:) y(1:10,:)]');
-
 %% ================ Part 2: Gradient Descent ================
 
 % ====================== YOUR CODE HERE ======================

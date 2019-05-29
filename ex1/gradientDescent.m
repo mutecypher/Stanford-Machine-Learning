@@ -23,21 +23,21 @@ for iter = 1:num_iters
 
     % number of features.
 
-    p = size(X, 2);
+  p = size(X, 2);
 
 
 
-    for j = 1:p
+  for j = 1:p
 
         % calculate dJ/d(theta_j)
 
-        deriv = ((X*theta_prev - y)'*X(:, j))/m;
+    deriv = ((X*theta_prev - y)'*X(:, j))/m;
 
 
 
         % % update theta_j
 
-        theta(j) = theta_prev(j)-(alpha*deriv);
+    theta(j) = theta_prev(j)-(alpha*deriv);
 
     end
 

@@ -25,8 +25,6 @@ for iter = 1:num_iters
 
     % Save the cost J in every iteration    
     J_history(iter) = computeCostMulti(X, y, theta);
-    fprintf('For this iteration we see%f\n',...
-    J_history(iter));
 
 end
 

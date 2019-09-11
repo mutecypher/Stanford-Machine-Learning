@@ -20,12 +20,12 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 
-
-
-
-
-
-
+h = X*theta;
+J = sum (((h-y).^2))/(2*m)+ lambda * (sum(theta.^2)-theta(1,1)^2)/(2*m);
+grad = X'*(h-y)/m;
+thetaT = theta;
+thetaT(1,1)=0;
+grad+= (lambda*thetaT)/m ;
 
 % =============================================================
 
